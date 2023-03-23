@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zikra</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="popup">
+            <div class="cross-div">
+                <span class="cross-symbol"> &#10006; </span>
+            </div>
+            <!-- <input name="add-text" id="value-1" class="ayat-input-field" type="text"></input> -->
+            <form id="filter-form" action="/filter" method="GET">  
+                <div class="juz-div">
+                    <label for="juz-no">:Select Juz Number</label>      
+                    <input type="number" min="1" max="30" class="ayat-input-field" id="juz-no" name="juz">
+                </div>
+            <button id="btn">Submit</button>
+            </form>
+        </div>
+        <div class="overlay"></div>
+        <div class="wrap">
+            <div class="header-div">
+                <div class="container start">
+                    <img class="sabaq-frame-2" src="./Assets/surah-and-ayah.png" alt="sabaq-ayah-frame">
+                    <div class="sabaq-number">
+                        جزء :
+                    </div>
+                </div>
+                <div class="fonts-btns">
+                    <button id="font-btn">(+)</button>
+                    <button id="font-btn">(-)</button>
+                    <span class="functionality">Font</span>
+    
+                </div>
+                <div class="container-2 center">
+                    <img class="sabaq-frame" src="./Assets/surah-and-ayah.png" alt="sabaq-frame">
+                    <!-- <span class="surat-name2">سورة</span> -->
+                    <span class="surat-name"></span>
+                </div>
+                <div class="container end">
+                    <img class="sabaq-ayah-frame" src="../Assets/surah-and-ayah.png" alt="sabaq-ayah-frame">
+                    <div class="ayat-number"></div>
+                </div>
+            </div>
+            <div class="ayah">
+                <span id="slide-one-ayat-text" class="ayats"></span>
+                <div class="content-div"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
