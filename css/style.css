@@ -61,7 +61,7 @@ body {
   background-color: #013938;
   height: 100vh;
   overflow-y: scroll;
-  background-image: url(./boder.png);
+  background-image: url(../Assets/boder.png);
   background-repeat: no-repeat;
 }
 
