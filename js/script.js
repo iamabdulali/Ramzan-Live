@@ -1,3 +1,4 @@
+
 let submitBtn = document.querySelector("#btn");
 let suratName = document.querySelector(".surat-name");
 let sabaqNumber = document.querySelector(".sabaq-number");
@@ -106,7 +107,7 @@ form.addEventListener("submit", (event) => {
   const juzNo = document.querySelector("#juz-no").value;
   sabaqNumber.textContent = `جزء : ${juzNo}`;
 
-  fetch(`${baseUrl}/filter?juzNo=${juzNo}`)
+  fetch(`https://zikra.onrender.com/filter?juzNo=${juzNo}`)
     .then((response) => response.json())
     .then((data) => {
       const filteredData = data.map((item) => {
